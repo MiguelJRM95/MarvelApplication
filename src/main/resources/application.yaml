@@ -11,6 +11,17 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.H2Dialect
+springdoc:
+  swagger-ui:
+    enabled: true
+  use-management-port: true
+management:
+  server:
+    port: 9090
+  endpoints:
+    web:
+      exposure:
+        include: openapi, swagger-ui
 
 marvelService:
   marvelExternalApi:
