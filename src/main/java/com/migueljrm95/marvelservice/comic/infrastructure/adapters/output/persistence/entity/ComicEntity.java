@@ -2,7 +2,6 @@ package com.migueljrm95.marvelservice.comic.infrastructure.adapters.output.persi
 
 import com.migueljrm95.marvelservice.character.infrastructure.adapters.output.persistence.entity.CharacterEntity;
 import com.migueljrm95.marvelservice.comic.domain.model.Comic;
-import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 

@@ -16,7 +16,7 @@ public class MarvelApiAuthentication {
     @Value("${marvelService.marvelExternalApi.privateKey}")
     private String privateKey;
 
-    private final String ts = String.valueOf(System.currentTimeMillis());;
+    private final String ts = String.valueOf(System.currentTimeMillis());
 
     public String generateHash(){
         return DigestUtils.md5Hex(ts + privateKey + publicKey);

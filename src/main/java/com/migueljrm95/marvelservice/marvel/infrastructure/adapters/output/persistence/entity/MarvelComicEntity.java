@@ -2,7 +2,6 @@ package com.migueljrm95.marvelservice.marvel.infrastructure.adapters.output.pers
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.migueljrm95.marvelservice.marvel.domain.model.MarvelComic;
-import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 

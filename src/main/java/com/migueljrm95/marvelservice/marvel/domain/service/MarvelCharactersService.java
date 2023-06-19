@@ -6,7 +6,6 @@ import com.migueljrm95.marvelservice.marvel.application.ports.output.useCase.Dum
 import com.migueljrm95.marvelservice.marvel.application.ports.output.useCase.GetMarvelCharactersUseCase;
 import com.migueljrm95.marvelservice.marvel.domain.model.MarvelApiAuthentication;
 import com.migueljrm95.marvelservice.marvel.infrastructure.adapters.output.rest.MarvelCharactersClientAdapter;
-import com.migueljrm95.marvelservice.marvel.infrastructure.adapters.output.rest.resource.Data;
 import com.migueljrm95.marvelservice.marvel.infrastructure.adapters.output.rest.resource.MarvelCharacterResponse;
 import com.migueljrm95.marvelservice.marvel.infrastructure.adapters.output.rest.resource.RootResponse;
 import lombok.AllArgsConstructor;

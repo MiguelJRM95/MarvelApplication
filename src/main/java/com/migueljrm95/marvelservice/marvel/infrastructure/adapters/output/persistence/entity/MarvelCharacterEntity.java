@@ -1,7 +1,6 @@
 package com.migueljrm95.marvelservice.marvel.infrastructure.adapters.output.persistence.entity;
 
 import com.migueljrm95.marvelservice.marvel.domain.model.MarvelCharacter;
-import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
