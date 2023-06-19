@@ -53,9 +53,7 @@ public class MarvelCharactersService implements GetMarvelCharactersUseCase, Dump
     public void dumpMarvelCharactersUseCase() {
         List<MarvelCharacterResponse> marvelCharacterResponseList = this.getMarvelCharacters();
         marvelCharacterResponseList.forEach(marvelCharacterResponse -> {
-            marvelCharacterResponse.comics.items.forEach(item -> {
-                marvelComicPort.createComic(item.toDomain());
-            });
+            marvelCharacterResponse.comics.items.forEach(item -> marvelComicPort.createComic(item.toDomain()));
 
             marvelCharactersPort.createCharacter(marvelCharacterResponse.toDomain());
         });
