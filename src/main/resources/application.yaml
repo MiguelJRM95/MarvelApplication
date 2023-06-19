@@ -1,8 +1,20 @@
 spring:
+  data:
+    rest:
+      base-path: /api/v1
   datasource:
     url: jdbc:h2:mem:marvel;IGNORECASE=TRUE
     username: marvel
     password: password
     driverClassName: org.h2.Driver
   jpa:
-    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+
+marvelService:
+  marvelExternalApi:
+    url: http://gateway.marvel.com
+    path: /v1/public
+    publicKey: ${MARVEL_PUBLIC_KEY}
+    privateKey: ${MARVEL_PRIVATE_KEY}
